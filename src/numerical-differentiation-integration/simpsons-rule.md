@@ -1,0 +1,1 @@
+# Simpson’s Rule

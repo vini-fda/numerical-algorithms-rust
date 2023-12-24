@@ -1,0 +1,6 @@
+[book]
+authors = ["Vinicius"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Numerical Algorithms in Rust"
