@@ -42,8 +42,6 @@ Most importantly, this book will give you the tools to understand how numerical 
 You will also learn about fundamental limitations in how we represent numbers in a computer, and how to avoid common pitfalls when implementing numerical algorithms.
 Crucially, that includes understanding how to avoid [floating point errors](https://en.wikipedia.org/wiki/Floating-point_arithmetic#Accuracy_problems) and [rounding errors](https://en.wikipedia.org/wiki/Round-off_error), understanding the difference between [stability](https://en.wikipedia.org/wiki/Numerical_stability) and [convergence](https://en.wikipedia.org/wiki/Convergence_(mathematics)) and also understanding that computers are fundamentally discrete machines, and that we need to use [discretization](https://en.wikipedia.org/wiki/Discretization) to approximate and solve continuous problems.
 
-
-
 ## Why specifically Rust?
 
 There are many excellent books on numerical methods and algorithms, but most of them are written in C, C++, or Fortran. Rust is a modern programming language that is fast, safe, and expressive. Its rich type system allows us to write code that is easy to read and maintain, and also adopts a mix of principles from procedural, functional, and object-oriented programming paradigms, such as:
