@@ -4,6 +4,11 @@
 
 - [Introduction to Numerical Analysis](introduction-to-numerical-analysis/README.md)
   - [Importance of Numerical Methods](introduction-to-numerical-analysis/importance-of-numerical-methods.md)
+  - [How computers represent numbers](introduction-to-numerical-analysis/how-computers-represent-numbers/README.md)
+    - [Integers](introduction-to-numerical-analysis/how-computers-represent-numbers/integers.md)
+    - [Floating Point Numbers](introduction-to-numerical-analysis/how-computers-represent-numbers/floating-point-numbers.md)
+    - [Rounding Errors](introduction-to-numerical-analysis/how-computers-represent-numbers/rounding-errors.md)
+    - [Overflow and Underflow](introduction-to-numerical-analysis/how-computers-represent-numbers/overflow-and-underflow.md)
   - [Errors in Numerical Computation](introduction-to-numerical-analysis/errors-in-numerical-computation.md)
   - [Stability and Convergence](introduction-to-numerical-analysis/stability-and-convergence.md)
 
