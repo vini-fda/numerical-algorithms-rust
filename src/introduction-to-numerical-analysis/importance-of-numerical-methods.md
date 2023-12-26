@@ -54,14 +54,6 @@ of the pendulum. This is a second-order non-linear ordinary differential equatio
 second-order derivatives of the unknown function \\(\theta\\). This is a very difficult equation to solve
 analytically, and therefore we must use numerical methods to simulate the motion of the pendulum.
 
-It gets even more complicated if we add a friction term to the equation:
-
-\\[
-\frac{d^2 \theta}{dt^2} = -\frac{g}{\ell} \sin \theta - \frac{\mu}{m} \frac{d \theta}{dt}
-\\]
-
-where \\(\mu\\) is the friction coefficient, and \\(m\\) is the mass of the pendulum.
-
 ### N-body problem
 
 Let's say you want to precisely predict the trajectory of a probe going from the Earth to Jupyter. Evidently,
