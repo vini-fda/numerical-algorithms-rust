@@ -39,6 +39,13 @@ The formula to represent a finite number \\(x\\) under this format is:
 As you can see, only a subset of the rational numbers \\(\mathbb{Q}\\) can be represented under this format. This
 will have some consequences when we try to represent numbers that are not in this subset, as we'll see later.
 
+> #### Note on the exponent
+> The exponent is a signed integer. In the IEEE 754 standard, the exponent is stored as an unsigned integer, and a *bias* term is subtracted from it.
+> Therefore, if it has \\(n\\) bits, the exponent can represent \\(2^n\\) values, but the range includes negative numbers because of the bias.
+> For example, if \\(n = 8\\), then the exponent can represent \\(2^8 = 256\\) values, but the range is \\(-127\\) to \\(+128\\) because of the bias of 127.
+>
+> Therefore, in general, the range of the exponent is \\(e_{\text{min}} = -2^{n-1} + 1\\) to \\(e_{\text{max}} = +2^{n-1}\\).
+
 ### Encoding
 
 The *encoding* of floating point numbers is the way that the format is mapped to the sequence of binary digits.
@@ -49,7 +56,7 @@ As a concrete example, the `f32` type is encoded as follows:
 \\]
 
 > #### Note on the leading bit of the mantissa
-> For numbers with an exponent in the normal range (the exponent field being neither all ones nor all zeros), the leading bit of the mantissa will always be 1.
+> For numbers with an exponent in the normal range (the exponent not being in the extremities \\(e_{\text{min}}\\) or \\(e_{\text{max}}\\), or equivalently, the exponent field being neither all ones nor all zeros), the leading bit of the mantissa will always be 1.
 >
 > Consequently, an "invisible" leading 1 can be implied rather than explicitly stored in memory, and under the standard the explicitly represented part of the significand will lie between 0 and 1.
 >
