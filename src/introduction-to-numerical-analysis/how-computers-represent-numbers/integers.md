@@ -2,7 +2,7 @@
 
 ## Unsigned Integers
 
-As briefly discussed in the [previous section](../README.md), unsigned integers are represented using the [unsigned binary number system](https://en.wikipedia.org/wiki/Binary_number#Unsigned_binary_numbers). In Rust, we can use the `u8`, `u16`, `u32`, `u64`, and `u128` types to represent unsigned integers with 8, 16, 32, 64, and 128 bits respectively.
+As briefly discussed in the [previous section](README.md), unsigned integers are represented using the [unsigned binary number system](https://en.wikipedia.org/wiki/Binary_number#Unsigned_binary_numbers). In Rust, we can use the `u8`, `u16`, `u32`, `u64`, and `u128` types to represent unsigned integers with 8, 16, 32, 64, and 128 bits respectively.
 
 ## Signed Integers
 
