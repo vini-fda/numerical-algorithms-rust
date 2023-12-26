@@ -7,7 +7,7 @@ Computers represent numbers using the [binary number system](https://en.wikipedi
 Mathematically, we can represent a number \\(x\\) in base \\(b\\) using the following formula:
 
 \\[
-x = \sum_{i=0}^n a_i b^i
+x = \sum_{i=0}^{n-1} a_i b^i
 \\]
 
 where \\(a_i\\) is the \\(i\\) th digit of the number, and \\(n\\) is the number of digits in the number. For example, the number 42 in base 10 is represented as:
