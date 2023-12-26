@@ -7,4 +7,4 @@ title = "Numerical Algorithms in Rust"
 
 [output.html]
 mathjax-support = true
-
+curly-quotes = true
