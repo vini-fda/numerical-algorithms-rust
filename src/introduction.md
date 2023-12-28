@@ -80,3 +80,9 @@ fn derivative(f: impl Fn(f64) -> f64) -> impl Fn(f64) -> f64 {
     // implementation...
 }
 ```
+
+From the type signature alone, we can see that the function `derivative` is a *higher-order function*[^higher-order-fn], that accepts `f` as input, and returns another function (the derivative of `f`) as output. This is a very powerful abstraction, and it allows us to write generic code that is easy to read.
+
+--------
+
+[^higher-order-fn]: A higher-order function is a function that takes another function as input, or returns another function as output.
