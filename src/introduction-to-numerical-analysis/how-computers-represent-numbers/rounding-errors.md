@@ -127,7 +127,27 @@ When subtracting two nearly equal numbers, significant digits can be lost, leadi
 
 ### Machine Epsilon and Comparison Issues
 
-The concept of *machine epsilon* (the smallest number that, when added to 1, yields a result different from 1) leads to comparison issues. For instance, checking if two floating-point numbers are equal can be problematic due to tiny differences.
+The concept of *machine epsilon* (the smallest number that, when added to 1, yields a result different from 1) leads to comparison issues. For instance, checking if two floating-point numbers are equal can be problematic due to tiny differences. The value of \\(\varepsilon\\) depends on the precision of the floating-point format.
+
+For example, to find the machine epsilon of the `f32` type, we can do the following:
+
+```rust
+let mut eps: f32 = 1.0;
+while 1.0 + eps != 1.0 {
+    eps /= 2.0;
+}
+println!("eps = {:.20}", eps);
+```
+
+Whereas the machine epsilon of the `f64` type is much smaller:
+
+```rust
+let mut eps: f64 = 1.0;
+while 1.0 + eps != 1.0 {
+    eps /= 2.0;
+}
+println!("eps = {:.20}", eps);
+```
 
 ### Accumulation of Rounding Errors in Iterative Processes
 
