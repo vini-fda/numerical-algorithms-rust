@@ -24,7 +24,7 @@ In Rust, floats are stored according to a binary IEEE 754 format.
 This format comprises:
 
 - Finite numbers, which can be described by three integers:
-  - \\(s\\), a *sign* (0 or 1)
+  - \\(s\\), a *sign* (+1 or -1)
   - \\(c\\), a *mantissa*, significand or coefficient, with a precision of \\(p\\) bits
   - \\(e\\), an *exponent*
 - Two infinities: \\(+\infty\\) and \\(-\infty\\).
@@ -33,7 +33,7 @@ This format comprises:
 The formula to represent a finite number \\(x\\) under this format is:
 
 \\[
-    x = (-1)^s \cdot c \cdot 2^e
+    x = s \cdot c \cdot 2^e
 \\]
 
 As you can see, only a subset of the rational numbers \\(\mathbb{Q}\\) can be represented under this format. This
@@ -124,7 +124,7 @@ And, as we can see, the formula for the floating point format holds:
 
 \\[
     \begin{align}
-        x &= (-1)^s \cdot c \cdot 2^e \\\\
+        x &= s \cdot c \cdot 2^e \\\\
         &= (+1) \cdot 1.125 \cdot 2^0 \\\\
         &= 1.125
     \end{align}
@@ -175,6 +175,31 @@ And, as we can see, the formula for the floating point format holds:
 >
 > So, for example, 0.1 is stored as 0.100000001490116119384765625 in the `f32` format. As you can see, there is an error on the order of \\(10^{-9}\\)
 > because of rounding.
+
+## Counter-intuitive consequences of the floating point format
+
+### Zeroes are Not Always Zero
+
+In floating-point arithmetic, you can encounter both positive zero (`+0`) and negative zero (`-0`), and they are considered equal even though they have different bit representations.
+
+### Rounding Errors
+
+Rounding introduces a lot of "weird" and unexpected behavior in FP arithmetic. Examples include:
+
+- Non-associativity of addition and multiplication
+- Loss of significance ("catastrophic cancellation")
+- Machine epsilon and comparison issues
+- Fluctuating precision at different scales
+
+These will be discussed in more detail in the [Rounding Errors](rounding-errors.md) section.
+
+### Infinite and NaN (Not a Number) Values
+
+Operations like dividing by zero or taking the square root of a negative number in floating-point don't throw errors but produce special values like `Infinity` or `NaN`. Moreover, `NaN` is unique as it is not equal to itself (`NaN != NaN`). In fact, `NaN != x` for any `x`.
+
+### Overflow and Underflow
+
+Numbers too large to be represented result in overflow, often represented by `Infinity`. Conversely, numbers too small to be represented (closer to zero than the smallest representable number) result in underflow, leading to a loss of precision. This will be further discussed in the [Overflow and Underflow](overflow-and-underflow.md) section.
 
 ## Further reading
 
