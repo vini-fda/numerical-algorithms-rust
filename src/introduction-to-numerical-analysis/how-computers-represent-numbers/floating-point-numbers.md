@@ -40,7 +40,7 @@ As you can see, only a subset of the rational numbers \\(\mathbb{Q}\\) can be re
 will have some consequences when we try to represent numbers that are not in this subset, as we'll see later.
 
 > #### Note on the exponent
-> The exponent is a signed integer. In the IEEE 754 standard, the exponent is stored as an unsigned integer, and a *bias* term is subtracted from it.
+> In the IEEE 754 standard, the exponent is stored as an unsigned integer, and a *bias* term is subtracted from it so that it can represent both positive and negative values.
 > Therefore, if it has \\(n\\) bits, the exponent can represent \\(2^n\\) values, but the range includes negative numbers because of the bias.
 > For example, if \\(n = 8\\), then the exponent can represent \\(2^8 = 256\\) values, but the range is \\(-127\\) to \\(+128\\) because of the bias of 127.
 >
