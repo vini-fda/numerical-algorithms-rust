@@ -180,5 +180,6 @@ And, as we can see, the formula for the floating point format holds:
 
 - The [Wikipedia page on floating-point arithmetic](https://en.wikipedia.org/wiki/Floating-point_arithmetic) is a great resource, with many links and explanations for anyone who wants to know more about both the technical aspects of floating-point arithmetic, as well as its history.
 - [Rust's documentation on the std::f32 primitive](https://doc.rust-lang.org/std/primitive.f32.html) is also a great resource to learn more about the `f32` type, and how the IEEE 754 standard is implemented in Rust.
-- The famous [What every computer scientist should know about floating-point arithmetic](https://dl.acm.org/doi/10.1145/103162.103163) article by David Goldberg is a must-read for anyone interested in the nitty-gritty details of the topic.
+- The famous [What every computer scientist should know about floating-point arithmetic](https://dl.acm.org/doi/10.1145/103162.103163) article by David Goldberg is a must-read for anyone interested in the nitty-gritty details of the topic. For an easier introduction, you can read the [floating-point-gui.de](https://floating-point-gui.de/) website.
+- [This stackoverflow answer](http://stackoverflow.com/questions/588004/is-javascripts-math-broken/588014) provides a great explanation of binary FP arithmetic.
 - As always, [the Rust Book](https://doc.rust-lang.org/book/ch03-02-data-types.html#floating-point-types) provides the de-facto source of truth for Rust's numeric types, and includes proper explanations of their behavior.
