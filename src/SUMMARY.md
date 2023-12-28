@@ -1,6 +1,7 @@
 # Summary
 
-[Introduction](README.md)
+[Preface](README.md)
+[Introduction](introduction.md)
 
 - [Introduction to Numerical Analysis](introduction-to-numerical-analysis/README.md)
   - [Importance of Numerical Methods](introduction-to-numerical-analysis/importance-of-numerical-methods.md)
