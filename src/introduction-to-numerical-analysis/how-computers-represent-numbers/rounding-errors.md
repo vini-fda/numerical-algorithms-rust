@@ -120,3 +120,19 @@ if p1 == p2 {
     println!("p1 != p2");
 }
 ```
+
+### Loss of Significance (Catastrophic Cancellation)
+
+When subtracting two nearly equal numbers, significant digits can be lost, leading to a loss of precision. For example, calculating `1.0000001 - 1.0000000` in floating-point might yield a less precise result than expected.
+
+### Machine Epsilon and Comparison Issues
+
+The concept of *machine epsilon* (the smallest number that, when added to 1, yields a result different from 1) leads to comparison issues. For instance, checking if two floating-point numbers are equal can be problematic due to tiny differences.
+
+### Accumulation of Rounding Errors in Iterative Processes
+
+In iterative algorithms, small rounding errors can accumulate over time, leading to increasingly significant deviations from the expected result.
+
+### Fluctuating Precision at Different Scales
+
+The precision of floating-point numbers is not uniform across their range. It decreases as the magnitude of the number increases, which can lead to unintuitive results in calculations involving very large numbers.
