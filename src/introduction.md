@@ -85,4 +85,4 @@ From the type signature alone, we can see that the function `derivative` is a *h
 
 --------
 
-[^higher-order-fn]: A higher-order function is a function that takes another function as input, or returns another function as output.
+[^higher-order-fn]: A higher-order function is a function that takes another function as input, or returns another function as output. *It's functions all the way down!*
