@@ -178,7 +178,7 @@ And, as we can see, the formula for the floating point format holds:
 
 ## Counter-intuitive consequences of the floating point format
 
-### Zeroes are Not Always Zero
+### Signed Zeroes
 
 In floating-point arithmetic, you can encounter both positive zero (`+0`) and negative zero (`-0`), and they are considered equal even though they have different bit representations.
 
