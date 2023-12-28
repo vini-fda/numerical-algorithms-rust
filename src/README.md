@@ -17,7 +17,7 @@ If you have any questions, suggestions, or corrections, feel free to open an iss
 I'm writing this book because:
 
 - I want to deepen my own understanding about numerical algorithms
-- I think there's a *serious* lack of resources on numerical algorithms that are written with Rust in mind
+- I think there's a *serious* lack of resources on numerical algorithms that are written with Rust in mind (as a matter of fact, there's somewhat of a lack of freely available, high-quality online resources on such algorithms)
 - As a more programming-oriented mind, I think a lot of undergraduate/graduate numerical analysis courses are either too superficial (by abstracting away implementation details) or too theoretical (by focusing too much on the math), and I want to provide a more unified approach to the subject, which links the theory to the practice, but always grounded in the programming aspect of it.
 
 Crucially, I think that Rust is the *perfect* language for this kind of book, for many reasons that we'll get to in the next section,
